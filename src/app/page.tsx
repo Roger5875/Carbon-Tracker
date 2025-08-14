@@ -51,30 +51,6 @@ export default function Home() {
     },
   ];
 
-  const testimonials = [
-    {
-      name: "Jane Doe",
-      title: "CEO, EcoForward",
-      avatar: "https://placehold.co/100x100.png",
-      dataAiHint: "woman portrait",
-      text: "CarbonTrack has been a game-changer for our sustainability goals. The insights are clear, actionable, and have helped us reduce our emissions by 15% in just one quarter.",
-    },
-    {
-      name: "John Smith",
-      title: "Founder, GreenLeaf Startups",
-      avatar: "https://placehold.co/100x100.png",
-      dataAiHint: "man portrait",
-      text: "As a small business, we needed a simple yet powerful tool. CarbonTrack delivered exactly that. The dashboard is fantastic and makes tracking our progress effortless.",
-    },
-    {
-      name: "Emily White",
-      title: "Operations Manager, CleanCrate",
-      avatar: "https://placehold.co/100x100.png",
-      dataAiHint: "woman smiling",
-      text: "The AI recommendations are incredibly insightful. We've implemented several suggestions that we hadn't even considered, leading to significant cost and carbon savings.",
-    },
-  ];
-
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <header className="px-4 lg:px-6 h-16 flex items-center shadow-sm">
@@ -156,47 +132,6 @@ export default function Home() {
                 </Card>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter text-center sm:text-5xl">
-              Trusted by Sustainable Businesses
-            </h2>
-            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl text-center mt-4">
-              Hear from our users who are making a difference with CarbonTrack.
-            </p>
-            <Carousel
-              opts={{ align: "start", loop: true }}
-              className="w-full max-w-4xl mx-auto mt-12"
-            >
-              <CarouselContent>
-                {testimonials.map((testimonial, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <Card className="h-full">
-                        <CardContent className="flex flex-col items-center text-center justify-center p-6">
-                          <Avatar className="w-20 h-20 mb-4 border-2 border-primary">
-                            <AvatarImage src={testimonial.avatar} data-ai-hint={testimonial.dataAiHint} />
-                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                          </Avatar>
-                          <p className="text-sm text-muted-foreground italic">
-                            "{testimonial.text}"
-                          </p>
-                          <div className="mt-4 font-semibold">{testimonial.name}</div>
-                          <div className="text-xs text-muted-foreground">
-                            {testimonial.title}
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
           </div>
         </section>
       </main>
