@@ -94,7 +94,7 @@ export default function Home() {
                 </div>
               </div>
               <img
-                src="https://placehold.co/600x400.png"
+                src="https://images.unsplash.com/photo-1532939163844-547f958e91b4?q=80&w=600&auto=format&fit=crop"
                 width="600"
                 height="400"
                 alt="Hero"

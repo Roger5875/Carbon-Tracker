@@ -34,7 +34,7 @@ export function DashboardHeader() {
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="relative h-10 w-10 rounded-full">
               <Avatar className="h-10 w-10">
-                <AvatarImage src={`https://avatar.vercel.sh/${user?.email}.png`} alt={user?.name} data-ai-hint="person avatar" />
+                <AvatarImage src={`https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=100&auto=format&fit=crop`} alt={user?.name} data-ai-hint="person avatar" />
                 <AvatarFallback>
                   {user?.name
                     ? user.name.charAt(0).toUpperCase()
