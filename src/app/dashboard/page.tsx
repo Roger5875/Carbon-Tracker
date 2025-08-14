@@ -6,7 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { OverviewCharts } from "@/components/dashboard/OverviewCharts";
 import { AIInsights } from "@/components/dashboard/AIInsights";
 import { formatNumber } from "@/lib/utils";
-import { Zap, Fuel, Trash2, Globe, Skeleton } from "lucide-react";
+import { Zap, Fuel, Trash2, Globe } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 import { SustainabilityTip } from "@/components/dashboard/SustainabilityTip";
 
 export default function DashboardPage() {
